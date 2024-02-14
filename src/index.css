@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+li {
+  list-style-type: none;
+}
+
+nav {
+  background-color: rgba(128, 128, 128, 0.432);
+  width: 40%;
+  height: 100vh;
+  margin: 0;
+}
+
+nav li {
+  padding: 1rem;
+}
+
+nav li:hover {
+  background-color: white;
+}
