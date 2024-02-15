@@ -4,6 +4,7 @@ import { Link } from 'react-scroll'
 const Navigation = () => {
   return (
     <nav>
+      LOGO
       <ul>
         <li><Link to="home" smooth duration={500}>Home</Link></li>
         <li><Link to="about" smooth duration={500}>About</Link></li>
