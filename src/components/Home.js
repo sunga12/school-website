@@ -1,6 +1,20 @@
-import React from 'react'
+import React from 'react';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from 'react-slick';
+import testimonials from '../testimonials';
+import Testimonial from './Testimonial';
 
 const Home = () => {
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <div id="home">
       <div className="home-top">
@@ -26,6 +40,18 @@ const Home = () => {
         <li className="home-link">Student Life</li>
       </ul>
 
+      <h2>Testimonials</h2>
+      <div className="test-slider">
+        <Slider {...settings}>
+          {testimonials.map((testimonial) => (
+            <Testimonial
+              message={testimonial.message}
+              voice={testimonial.voice}
+            />
+          ))}
+        </Slider>
+      </div>
+
       <h2>Dates for your Diary</h2>
 
       <div className="key-dates">
@@ -40,7 +66,6 @@ const Home = () => {
         </div>
       </div>
       
-      <h2>Testimonials</h2>
 
       <h5>Social Media Links</h5>
       </div>
