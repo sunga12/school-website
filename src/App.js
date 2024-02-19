@@ -10,6 +10,7 @@ import StuLife from './components/StuLife';
 function App() {
   return (
     <div>
+      {/* <Navigation /> */}
       <Home />
       <About />
       <News />
