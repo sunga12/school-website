@@ -23,6 +23,7 @@ const iconVariants = {
 
 const Home = () => {
 
+
   const settings = {
     dots: true,
     infinite: true,
@@ -41,46 +42,55 @@ const Home = () => {
         </div>
      </div>
 
-    <h2 className="title">Headteacher's Welcome</h2>
-    <p className="home-welcome">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Harum dolores nulla inventore architecto, deleniti
-      tenetur asperiores blanditiis, repudiandae temporibus,
-      quae facilis recusandae consectetur! 
-      <br />
-      <button>
-        Read More
-      </button>
-    </p>
+    <div className="head-welcome">
+      <h2 className="title headteachers">Headteacher's <p className="welcome">Welcome</p></h2>
+      <p className="home-welcome">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Harum dolores nulla inventore architecto, deleniti
+        tenetur asperiores blanditiis, repudiandae temporibus,
+        quae facilis recusandae consectetur! 
+        <br />
+        <button>
+          Read More
+        </button>
+      </p>
+    </div>
+
     <ul className="home-links">
       <li className="home-link">Contact Us</li>
       <li className="home-link">Gallery</li>
       <li className="home-link">Student Life</li>
     </ul>
 
-    <h2 className="title">Testimonials</h2>
-    <div className="test-slider">
-      <Slider {...settings}>
-        {testimonials.map((testimonial) => (
-          <Testimonial
-            message={testimonial.message}
-            voice={testimonial.voice}
-          />
-        ))}
-      </Slider>
+    <div className="dfyd">
+  <h2 className="title dates">Dates for your <p className="welcome">Diary</p></h2>
+  <div className="key-dates">
+    <div className="key-date">
+      <p>Term Start</p>
+      <p className="d8">12<br /><small className="month">FEB</small></p>
     </div>
+    <div className="key-date">
+      <p>Term End</p>
+      <p className="d8">6<br /><small className="month">MAY</small></p>
+    </div>
+  </div>
+</div>
 
-    <h2 className="title">Dates for your Diary</h2>
-    <div className="key-dates">
-      <div className="key-date">
-        <p>Term Start</p>
-        <p className="d8">12<br /><small>Feb</small></p>
-      </div>
-      <div className="key-date">
-        <p>Term End</p>
-        <p className="d8">6<br /><small>May</small></p>
-      </div>
-    </div>
+<div className="testimonials-section">
+
+  <h2 className="t-title">Testimonials</h2>
+  <div className="test-slider">
+    <Slider {...settings}>
+      {testimonials.map((testimonial) => (
+        <Testimonial
+          message={testimonial.message}
+          voice={testimonial.voice}
+        />
+      ))}
+    </Slider>
+  </div>
+
+</div>
       
     <div className="home-bottom">
         <p className="logo">School Logo</p>
@@ -90,42 +100,46 @@ const Home = () => {
           Contact Number: +260212-612-832<br />
           Email: customprivateschool@gmail.com</p>
         </div>
+        <div className="socmed">
+
+<h4 className="title">Stay Up to date with us on Social Media</h4>
+
+<ul className="icons">
+  <motion.li
+    variants={iconVariants}
+    initial="initial"
+    whileHover="hover"
+  >
+    <a href="https://www.github.com/sunga12"><img src={github} className="contact-icon" alt="github" /></a>
+  </motion.li>
+  <motion.li
+    variants={iconVariants}
+    initial="initial"
+    whileHover="hover"
+  >
+    <a href="https://www.linkedin.com/in/sungabanja-thawethe-b3419b142"><img src={linkedin} className="contact-icon" alt="linkedIn" /></a>
+  </motion.li>
+  <motion.li
+    variants={iconVariants}
+    initial="initial"
+    whileHover="hover"
+  >
+    <a href="https://wellfound.com/u/sungabanja-thawethe"><img src={wellfound} className="contact-icon" alt="wellfound" /></a>
+  </motion.li>
+  <motion.li
+    variants={iconVariants}
+    initial="initial"
+    whileHover="hover"
+  >
+    <a href="https://medium.com/@sungabt"><img src={medium} className="contact-icon" alt="medium" /></a>
+  </motion.li>
+</ul>
+</div>
     </div>
 
-    <h5 className="title">Stay Up to date with us on Social Media</h5>
 
-    <ul className="icons">
-      <motion.li
-        variants={iconVariants}
-        initial="initial"
-        whileHover="hover"
-      >
-        <a href="https://www.github.com/sunga12"><img src={github} className="contact-icon" alt="github" /></a>
-      </motion.li>
-      <motion.li
-        variants={iconVariants}
-        initial="initial"
-        whileHover="hover"
-      >
-        <a href="https://www.linkedin.com/in/sungabanja-thawethe-b3419b142"><img src={linkedin} className="contact-icon" alt="linkedIn" /></a>
-      </motion.li>
-      <motion.li
-        variants={iconVariants}
-        initial="initial"
-        whileHover="hover"
-      >
-        <a href="https://wellfound.com/u/sungabanja-thawethe"><img src={wellfound} className="contact-icon" alt="wellfound" /></a>
-      </motion.li>
-      <motion.li
-        variants={iconVariants}
-        initial="initial"
-        whileHover="hover"
-      >
-        <a href="https://medium.com/@sungabt"><img src={medium} className="contact-icon" alt="medium" /></a>
-      </motion.li>
-    </ul>
 
-    </div>
+</div>
   )
 }
 
