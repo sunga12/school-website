@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:wght@300;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.text {
+  color: #050315;
+}
+
+.background {
+  background-color: #FBFBFE;
+}
+
+.primary {
+  background-color: #2F27CE;
+}
+
+.secondary {
+  background-color: #DEDCFF;
+}
+
+.accent {
+  background-color: #433BFF;
+}
+
+.school-name {
+  margin-bottom: 0;
+}
+
+.motto {
+  margin-top: 0;
+}
+
+.title {
+  margin-left: 1rem;
+  color: #202e53;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav {
+  position: absolute;
+  background-color: #edebe8;
+  width: 100%;
+  height: fit-content;
+  margin: 0;
+  z-index: 10;
+}
+
+button {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: 9rem;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #fff;
+}
+
+nav ul {
+  width: 90%;
+  padding: 0;
+}
+
+nav li {
+  padding: 1rem 0.5rem;
+}
+
+nav li:hover {
+  border-bottom: 2px solid #ffffff;
+  padding: 1rem 0.5rem;
+}
+
+.logo {
+  border: 2px solid black;
+  margin: 1rem;
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+.home-top {
+  display: flex;
+  background-color: #edebe8;
+}
+
+.headteachers,
+.dates {
+  margin-bottom: 0;
+  line-height: 3rem;
+}
+
+.welcome {
+  font-family: Sacramento;
+  font-size: 5rem;
+  /* position: absolute; */
+  margin: 0;
+  padding: 0;
+  color: #5b7d66;
+  opacity: 65%;
+}
+
+.home-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 0rem auto;
+  /* background-color: #edebe8; */
+  position: absolute;
+  top: 520px;
+}
+
+.home-link {
+  display: flex;
+  justify-content: center;
+  width: 9rem;
+  height: 9rem;
+  line-height: 9rem;
+  text-align: center;
+  vertical-align: middle;
+  border: 6px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  background-color: #050315a1;
+  background-image: url(./components/assets/images/school/toddlers.jpg);
+  background-blend-mode: overlay;
+  background-position: 50% 50%;
+  background-size: 100%;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.head-welcome {
+  background-color: rgb(182,214,182);
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 23%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+  padding: 4rem 3rem;
+  width: 80%;
+  margin: 1rem auto 9rem;
+}
+
+.home-welcome {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.dfyd {
+  background-color: #edebe8;
+  margin: 2rem auto;
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 23%;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+  padding: 4rem 2rem 9rem;
+  width: 90%;
+  overflow: hidden ;
+}
+
+.key-dates {
+  display: flex;
+  margin: 4rem auto 1rem;
+  justify-content: space-evenly;
+  
+}
+
+.key-date {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 50px;
+  align-items: center;
+  background-color: #97bba1;
+  color: #202e53;
+  font-weight: 700;
+  box-shadow: 5px 5px 10px grey;
+}
+
+.d8 {
+  border: 3px solid rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.d8:hover {
+  background-color: #fff;
+}
+
+.month {
+  font-size: 1rem;
+}
+
+.test-slider {
+  width: 80%;
+  margin: auto;
+}
+
+.testimonials-section {
+  margin: 2rem auto;
+  padding: 7rem 2rem;
+  width: 90%;
+  background-color: rgb(76, 155, 99);
+  color: #ffffff;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 23%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+  background-image: url(../src/components/assets/images/school/assembly-dance.jpg);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 40%;
+  
+}
+
+.testimonial {
+  width: 80%;
+  margin: auto;
+}
+
+.t-title {
+  font-family: Sacramento;
+  color: #afe1b3;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.t-message {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem auto;
+}
+
+.icons > li {
+  filter: brightness(0);
+}
+
+.home-bottom {
+  display: flex;
+  background-color: #edebe8;
+  width: 100%;
+  margin: auto;
+  padding: 3rem 0;
+  font-size: smaller;
+}
